@@ -1,9 +1,11 @@
 package org.iesvdm.appointment.repository;
 
 import org.iesvdm.appointment.entity.Appointment;
+import org.iesvdm.appointment.entity.Customer;
 import org.iesvdm.appointment.repository.impl.AppointmentRepositoryImpl;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+import static org.assertj.core.api.Assertions.*;
 
 import java.util.HashSet;
 import java.util.Set;
@@ -31,8 +33,15 @@ public class AppointmentRepositoryImplTest {
      */
     @Test
     void getOneTest() {
-
-    }
+        Appointment apointment1 = new Appointment();
+        apointment1 = appointmentRepository.getOne(1);
+        Appointment apointment2 = new Appointment();
+        apointment2 = appointmentRepository.getOne(2);
+        appointments.add(apointment1);
+        appointments.add(apointment2);
+        assertThat(appointmentRepository.getOne(1)).isEqualTo(apointment1);
+        assertThat(appointmentRepository.getOne(20)).isEqualTo(apointment1);
+    } //Cuando creo las los instancias, y las meto en el objeto appoinments luego intento llamarlas y me dicen que se encuentran null, cuando las he creado al principio.
 
     /**
      * Crea 2 citas (Appointment) y guárdalas mediante
@@ -42,7 +51,16 @@ public class AppointmentRepositoryImplTest {
      */
     @Test
     void saveTest() {
-
+        Appointment apointment1 = new Appointment();
+        apointment1 = appointmentRepository.getOne(1);
+        Appointment apointment2 = new Appointment();
+        apointment2 = appointmentRepository.getOne(2);
+        appointments.add(apointment1);
+        appointments.add(apointment2);
+        appointmentRepository.save(apointment1);
+        appointmentRepository.save(apointment2);
+        assertThat(appointments.contains(apointment1)).isTrue();
+        assertThat(appointments.contains(apointment2)).isTrue();
     }
 
     /**
@@ -54,7 +72,23 @@ public class AppointmentRepositoryImplTest {
      */
     @Test
     void findCanceledByUserTest() {
+        Appointment apointment1 = new Appointment();
+        apointment1 = appointmentRepository.getOne(1);
+        Customer customer1 = new Customer();
+        customer1.setId(1);
+        apointment1.setCustomer(customer1);
+        appointments.add(apointment1);
+        apointment1.setCustomer(customer1);
 
+        Appointment apointment2 = new Appointment();
+        apointment2 = appointmentRepository.getOne(2);
+        Customer customer2 = new Customer();
+        customer2.setId(2);
+        apointment2.setCustomer(customer2);
+        appointments.add(apointment2);
+        appointmentRepository.save(apointment2);
+
+        assertThat(appointmentRepository.findCanceledByUser(1)).isEqualTo(apointment1);
     }
 
     /**

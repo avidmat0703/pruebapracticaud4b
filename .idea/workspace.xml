@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a4924cbe-497e-42d5-8035-47d9055b38bf" name="Changes" comment="inicial" />
+    <list default="true" id="a4924cbe-497e-42d5-8035-47d9055b38bf" name="Changes" comment="Commit final">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/iesvdm/appointment/repository/AppointmentRepositoryImplTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/iesvdm/appointment/repository/AppointmentRepositoryImplTest.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -49,6 +52,9 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Application.Main.executor": "Run",
+    "JUnit.AppointmentRepositoryImplTest.findCanceledByUserTest.executor": "Run",
+    "JUnit.AppointmentRepositoryImplTest.getOneTest.executor": "Run",
+    "JUnit.AppointmentRepositoryImplTest.saveTest.executor": "Run",
     "JUnit.SudokuTest.copyBoard.executor": "Run",
     "JUnit.SudokuTest.executor": "Run",
     "JUnit.SudokuTest.failTest.executor": "Run",
@@ -90,7 +96,55 @@
       <recent name="org.iesvdm" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.SudokuTest">
+  <component name="RunManager" selected="JUnit.AppointmentRepositoryImplTest.findCanceledByUserTest">
+    <configuration name="AppointmentRepositoryImplTest.findCanceledByUserTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="pruebaud4daw" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.iesvdm.appointment.repository.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.iesvdm.appointment.repository" />
+      <option name="MAIN_CLASS_NAME" value="org.iesvdm.appointment.repository.AppointmentRepositoryImplTest" />
+      <option name="METHOD_NAME" value="findCanceledByUserTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AppointmentRepositoryImplTest.getOneTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="pruebaud4daw" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.iesvdm.appointment.repository.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.iesvdm.appointment.repository" />
+      <option name="MAIN_CLASS_NAME" value="org.iesvdm.appointment.repository.AppointmentRepositoryImplTest" />
+      <option name="METHOD_NAME" value="getOneTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AppointmentRepositoryImplTest.saveTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="pruebaud4daw" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.iesvdm.appointment.repository.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.iesvdm.appointment.repository" />
+      <option name="MAIN_CLASS_NAME" value="org.iesvdm.appointment.repository.AppointmentRepositoryImplTest" />
+      <option name="METHOD_NAME" value="saveTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="SudokuTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="pruebaud4daw" />
       <extension name="coverage">
@@ -102,54 +156,6 @@
       <option name="PACKAGE_NAME" value="org.iesvdm.sudoku" />
       <option name="MAIN_CLASS_NAME" value="org.iesvdm.sudoku.SudokuTest" />
       <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="SudokuTest.copyBoard" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="pruebaud4daw" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.iesvdm.sudoku.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="org.iesvdm.sudoku" />
-      <option name="MAIN_CLASS_NAME" value="org.iesvdm.sudoku.SudokuTest" />
-      <option name="METHOD_NAME" value="copyBoard" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="SudokuTest.isNumberInBox" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="pruebaud4daw" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.iesvdm.sudoku.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="org.iesvdm.sudoku" />
-      <option name="MAIN_CLASS_NAME" value="org.iesvdm.sudoku.SudokuTest" />
-      <option name="METHOD_NAME" value="isNumberInBox" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="SudokuTest.putNumberInBoard" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="pruebaud4daw" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.iesvdm.sudoku.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="org.iesvdm.sudoku" />
-      <option name="MAIN_CLASS_NAME" value="org.iesvdm.sudoku.SudokuTest" />
-      <option name="METHOD_NAME" value="putNumberInBoard" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -172,10 +178,10 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.AppointmentRepositoryImplTest.findCanceledByUserTest" />
+        <item itemvalue="JUnit.AppointmentRepositoryImplTest.saveTest" />
+        <item itemvalue="JUnit.AppointmentRepositoryImplTest.getOneTest" />
         <item itemvalue="JUnit.SudokuTest" />
-        <item itemvalue="JUnit.SudokuTest.copyBoard" />
-        <item itemvalue="JUnit.SudokuTest.putNumberInBoard" />
-        <item itemvalue="JUnit.SudokuTest.isNumberInBox" />
         <item itemvalue="JUnit.SudokuTest.solveBoard" />
       </list>
     </recent_temporary>
@@ -200,6 +206,15 @@
       <workItem from="1715873916029" duration="12533000" />
       <workItem from="1715926851988" duration="6835000" />
     </task>
+    <task id="LOCAL-00001" summary="Commit final">
+      <option name="closed" value="true" />
+      <created>1715934232634</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1715934232634</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -245,7 +260,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="inicial" />
-    <option name="LAST_COMMIT_MESSAGE" value="inicial" />
+    <MESSAGE value="Commit final" />
+    <option name="LAST_COMMIT_MESSAGE" value="Commit final" />
   </component>
   <component name="XDebuggerManager">
     <pin-to-top-manager>
